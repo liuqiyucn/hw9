@@ -1,0 +1,150 @@
+12-06 17:26:11 [main] DEBUG com.autograder.cli.parser.CommandParserFactory - Initializing command line argument parser
+12-06 17:26:11 [main] INFO  com.autograder.cli.App - Starting application
+12-06 17:26:11 [main] INFO  com.autograder.cli.App - Parsing command line arguments
+12-06 17:26:11 [main] DEBUG com.autograder.cli.parser.CommandParser - args: [-e, autograder.ucsd.edu, turnin, -i]
+12-06 17:26:11 [main] DEBUG com.autograder.cli.App - command: turnin
+12-06 17:26:11 [main] INFO  com.autograder.cli.App - Executing turnin command
+12-06 17:26:11 [main] INFO  com.autograder.cli.tasks.LogParametersTask - Logging parameters
+12-06 17:26:11 [main] DEBUG com.autograder.cli.tasks.LogParametersTask - interactive: true
+12-06 17:26:11 [main] DEBUG com.autograder.cli.tasks.LogParametersTask - courseId: null
+12-06 17:26:11 [main] DEBUG com.autograder.cli.tasks.LogParametersTask - assignmentId: null
+12-06 17:26:11 [main] DEBUG com.autograder.cli.tasks.LogParametersTask - dir: /home/linux/ieng6/cs12fa19/cs12fa19ku/hw9
+12-06 17:26:11 [main] DEBUG com.autograder.cli.tasks.LogParametersTask - zip: null
+12-06 17:26:11 [main] INFO  com.autograder.cli.tasks.FetchCourseInteractiveTask - Fetching course
+12-06 17:26:23 [main] DEBUG com.autograder.cli.tasks.FetchCourseInteractiveTask - course: {"id":349,"name":"Basic Data Structures \u0026 OO Design","shortName":"CSE12","year":2019,"quarter":"FA"}
+12-06 17:26:23 [main] INFO  com.autograder.cli.tasks.FetchAssignmentInteractiveTask - Fetching assignment
+12-06 17:26:24 [main] DEBUG com.autograder.cli.tasks.FetchAssignmentInteractiveTask - assignment: {"id":1847,"name":"Homework 9","due":"2019-12-07T00:05:00-0800","acceptableFiles":["*.java","*.h","*.cpp","*.c","README","Makefile","sample"],"compilationCommand":"make new","testCommands":["./Driver"]}
+12-06 17:26:24 [main] INFO  com.autograder.cli.tasks.turnin.ValidateOnTimeTask - Checking if the assignment is due
+12-06 17:26:24 [main] DEBUG com.autograder.cli.tasks.turnin.ValidateOnTimeTask - now: Fri 12/06/19 05:26 PM PST
+12-06 17:26:24 [main] DEBUG com.autograder.cli.tasks.turnin.ValidateOnTimeTask - due: Sat 12/07/19 12:05 AM PST
+12-06 17:26:24 [main] INFO  com.autograder.cli.tasks.turnin.SanityCheckTask - Running sanity check
+12-06 17:26:24 [main] INFO  com.autograder.autograder.services.EvaluationService - Starting evaluation service with 5 threads
+12-06 17:26:24 [main] INFO  com.autograder.autograder.services.EvaluationService - Submitting a new evaluation job com.autograder.autograder.EvaluationJob@1282abb
+12-06 17:26:24 [main] INFO  com.autograder.autograder.services.EvaluationService - Shutting down evaluation service
+12-06 17:26:24 [pool-2-thread-1] INFO  com.autograder.autograder.services.EvaluationService - Processing job com.autograder.autograder.EvaluationJob@1282abb
+12-06 17:26:24 [main] INFO  com.autograder.autograder.services.EvaluationService - Waiting 60 SECONDS for executor to terminate
+12-06 17:26:24 [pool-2-thread-1] DEBUG com.autograder.autograder.services.EvaluationService - submission: com.autograder.autograder.Submission@2ff1fd
+12-06 17:26:24 [pool-2-thread-1] DEBUG com.autograder.autograder.services.EvaluationService - submissionDir: /tmp/autograder2633757182187070513
+12-06 17:26:24 [pool-2-thread-1] DEBUG com.autograder.autograder.services.EvaluationService - workingDir: /tmp/autograder2995317452804357155
+12-06 17:26:24 [pool-2-thread-1] DEBUG com.autograder.autograder.services.EvaluationService - env: []
+12-06 17:26:24 [pool-2-thread-1] INFO  com.autograder.autograder.services.EvaluationService - Compiling program with make new
+12-06 17:26:24 [pool-2-thread-1] INFO  com.autograder.autograder.utils.ProcessExecutor - Running process with 60000 milliseconds timeout
+12-06 17:26:25 [pool-2-thread-1] DEBUG com.autograder.autograder.utils.ProcessExecutor - Shutting down executor
+12-06 17:26:25 [pool-2-thread-1] DEBUG com.autograder.autograder.utils.ProcessExecutor - Retrieving exit value from the process
+12-06 17:26:25 [pool-2-thread-1] INFO  com.autograder.autograder.services.EvaluationService - Running 1 test cases
+12-06 17:26:25 [pool-2-thread-1] INFO  com.autograder.autograder.services.EvaluationService - Running test case com.autograder.autograder.TestCase@1ace21
+12-06 17:26:25 [pool-2-thread-1] DEBUG com.autograder.autograder.services.EvaluationService - Running test command ./Driver
+12-06 17:26:25 [pool-2-thread-1] INFO  com.autograder.autograder.utils.ProcessExecutor - Running process with 10000 milliseconds timeout
+12-06 17:26:25 [pool-2-thread-1] DEBUG com.autograder.autograder.utils.ProcessExecutor - Shutting down executor
+12-06 17:26:25 [pool-2-thread-1] DEBUG com.autograder.autograder.utils.ProcessExecutor - Retrieving exit value from the process
+12-06 17:26:25 [pool-2-thread-1] DEBUG com.autograder.autograder.services.EvaluationService - rebuild: false
+12-06 17:26:25 [pool-2-thread-1] DEBUG com.autograder.cli.tasks.turnin.SanityCheckTask - Finished running sanity check
+12-06 17:26:25 [main] INFO  com.autograder.autograder.services.EvaluationService - Evaluation service terminated
+12-06 17:26:25 [main] INFO  com.autograder.cli.tasks.turnin.ArchiveTask - Archiving submission
+12-06 17:26:25 [main] DEBUG com.autograder.cli.tasks.turnin.ArchiveTask - path: ?/.ag/fa19-cse12/Homework 9/turnin
+12-06 17:26:25 [main] DEBUG com.autograder.cli.tasks.turnin.ArchiveTask - filename: 2019-12-06-17-26-25-0800.zip
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Compressing the following files at '/home/linux/ieng6/cs12fa19/cs12fa19ku/hw9' into a zip at '?/.ag/fa19-cse12/Homework 9/turnin/2019-12-06-17-26-25-0800.zip'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - *.java
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - *.h
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - *.cpp
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - *.c
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - README
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Makefile
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - sample
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Converting globs
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Main.c'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Namein.c'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Driver.c'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Namein.h'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Driver.h'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'List.c'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Tree.c'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Calc.c'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Tree.h'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'List.h'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Makefile'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Decin.h'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Calc.h'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Stack.c'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Decin.c'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Stack.h'
+12-06 17:26:25 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'SymTab.h'
+12-06 17:26:25 [main] INFO  com.autograder.cli.tasks.turnin.TurninTask - Turning in submission
+12-06 17:26:28 [main] INFO  com.autograder.cli.tasks.turnin.TurninTask - Successfully turned in project
+12-06 17:26:28 [main] INFO  com.autograder.cli.App - Command turnin exits normally
+12-06 17:26:28 [main] INFO  com.autograder.cli.App - Application exits normally
+12-06 23:30:55 [main] DEBUG com.autograder.cli.parser.CommandParserFactory - Initializing command line argument parser
+12-06 23:30:56 [main] INFO  com.autograder.cli.App - Starting application
+12-06 23:30:56 [main] INFO  com.autograder.cli.App - Parsing command line arguments
+12-06 23:30:56 [main] DEBUG com.autograder.cli.parser.CommandParser - args: [-e, autograder.ucsd.edu, turnin, -i]
+12-06 23:30:56 [main] DEBUG com.autograder.cli.App - command: turnin
+12-06 23:30:56 [main] INFO  com.autograder.cli.App - Executing turnin command
+12-06 23:30:56 [main] INFO  com.autograder.cli.tasks.LogParametersTask - Logging parameters
+12-06 23:30:56 [main] DEBUG com.autograder.cli.tasks.LogParametersTask - interactive: true
+12-06 23:30:56 [main] DEBUG com.autograder.cli.tasks.LogParametersTask - courseId: null
+12-06 23:30:56 [main] DEBUG com.autograder.cli.tasks.LogParametersTask - assignmentId: null
+12-06 23:30:56 [main] DEBUG com.autograder.cli.tasks.LogParametersTask - dir: /home/linux/ieng6/cs12fa19/cs12fa19ku/hw9
+12-06 23:30:56 [main] DEBUG com.autograder.cli.tasks.LogParametersTask - zip: null
+12-06 23:30:56 [main] INFO  com.autograder.cli.tasks.FetchCourseInteractiveTask - Fetching course
+12-06 23:31:03 [main] DEBUG com.autograder.cli.tasks.FetchCourseInteractiveTask - course: {"id":349,"name":"Basic Data Structures \u0026 OO Design","shortName":"CSE12","year":2019,"quarter":"FA"}
+12-06 23:31:03 [main] INFO  com.autograder.cli.tasks.FetchAssignmentInteractiveTask - Fetching assignment
+12-06 23:31:05 [main] DEBUG com.autograder.cli.tasks.FetchAssignmentInteractiveTask - assignment: {"id":1847,"name":"Homework 9","due":"2019-12-07T00:05:00-0800","acceptableFiles":["*.java","*.h","*.cpp","*.c","README","Makefile","sample"],"compilationCommand":"make new","testCommands":["./Driver"]}
+12-06 23:31:05 [main] INFO  com.autograder.cli.tasks.turnin.ValidateOnTimeTask - Checking if the assignment is due
+12-06 23:31:05 [main] DEBUG com.autograder.cli.tasks.turnin.ValidateOnTimeTask - now: Fri 12/06/19 11:31 PM PST
+12-06 23:31:05 [main] DEBUG com.autograder.cli.tasks.turnin.ValidateOnTimeTask - due: Sat 12/07/19 12:05 AM PST
+12-06 23:31:05 [main] INFO  com.autograder.cli.tasks.turnin.SanityCheckTask - Running sanity check
+12-06 23:31:05 [main] INFO  com.autograder.autograder.services.EvaluationService - Starting evaluation service with 5 threads
+12-06 23:31:05 [main] INFO  com.autograder.autograder.services.EvaluationService - Submitting a new evaluation job com.autograder.autograder.EvaluationJob@1282abb
+12-06 23:31:05 [main] INFO  com.autograder.autograder.services.EvaluationService - Shutting down evaluation service
+12-06 23:31:05 [main] INFO  com.autograder.autograder.services.EvaluationService - Waiting 60 SECONDS for executor to terminate
+12-06 23:31:05 [pool-2-thread-1] INFO  com.autograder.autograder.services.EvaluationService - Processing job com.autograder.autograder.EvaluationJob@1282abb
+12-06 23:31:05 [pool-2-thread-1] DEBUG com.autograder.autograder.services.EvaluationService - submission: com.autograder.autograder.Submission@b04ce1
+12-06 23:31:05 [pool-2-thread-1] DEBUG com.autograder.autograder.services.EvaluationService - submissionDir: /tmp/autograder5077261714135389101
+12-06 23:31:05 [pool-2-thread-1] DEBUG com.autograder.autograder.services.EvaluationService - workingDir: /tmp/autograder3656921489049728721
+12-06 23:31:05 [pool-2-thread-1] DEBUG com.autograder.autograder.services.EvaluationService - env: []
+12-06 23:31:05 [pool-2-thread-1] INFO  com.autograder.autograder.services.EvaluationService - Compiling program with make new
+12-06 23:31:05 [pool-2-thread-1] INFO  com.autograder.autograder.utils.ProcessExecutor - Running process with 60000 milliseconds timeout
+12-06 23:31:05 [pool-2-thread-1] DEBUG com.autograder.autograder.utils.ProcessExecutor - Shutting down executor
+12-06 23:31:05 [pool-2-thread-1] DEBUG com.autograder.autograder.utils.ProcessExecutor - Retrieving exit value from the process
+12-06 23:31:07 [pool-2-thread-1] INFO  com.autograder.autograder.services.EvaluationService - Running 1 test cases
+12-06 23:31:07 [pool-2-thread-1] INFO  com.autograder.autograder.services.EvaluationService - Running test case com.autograder.autograder.TestCase@f35ef7
+12-06 23:31:07 [pool-2-thread-1] DEBUG com.autograder.autograder.services.EvaluationService - Running test command ./Driver
+12-06 23:31:07 [pool-2-thread-1] INFO  com.autograder.autograder.utils.ProcessExecutor - Running process with 10000 milliseconds timeout
+12-06 23:31:07 [pool-2-thread-1] DEBUG com.autograder.autograder.utils.ProcessExecutor - Shutting down executor
+12-06 23:31:07 [pool-2-thread-1] DEBUG com.autograder.autograder.utils.ProcessExecutor - Retrieving exit value from the process
+12-06 23:31:07 [pool-2-thread-1] DEBUG com.autograder.autograder.services.EvaluationService - rebuild: false
+12-06 23:31:07 [pool-2-thread-1] DEBUG com.autograder.cli.tasks.turnin.SanityCheckTask - Finished running sanity check
+12-06 23:31:07 [main] INFO  com.autograder.autograder.services.EvaluationService - Evaluation service terminated
+12-06 23:31:07 [main] INFO  com.autograder.cli.tasks.turnin.ArchiveTask - Archiving submission
+12-06 23:31:07 [main] DEBUG com.autograder.cli.tasks.turnin.ArchiveTask - path: ?/.ag/fa19-cse12/Homework 9/turnin
+12-06 23:31:07 [main] DEBUG com.autograder.cli.tasks.turnin.ArchiveTask - filename: 2019-12-06-23-31-07-0800.zip
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Compressing the following files at '/home/linux/ieng6/cs12fa19/cs12fa19ku/hw9' into a zip at '?/.ag/fa19-cse12/Homework 9/turnin/2019-12-06-23-31-07-0800.zip'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - *.java
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - *.h
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - *.cpp
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - *.c
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - README
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Makefile
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - sample
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Converting globs
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Main.c'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Namein.c'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Driver.c'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Namein.h'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Driver.h'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'List.c'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Tree.c'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Calc.c'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Tree.h'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'List.h'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Makefile'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Decin.h'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Calc.h'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Stack.c'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Decin.c'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'Stack.h'
+12-06 23:31:07 [main] INFO  com.autograder.utils.ZipUtils - Zipping 'SymTab.h'
+12-06 23:31:07 [main] INFO  com.autograder.cli.tasks.turnin.TurninTask - Turning in submission
+12-06 23:31:09 [main] INFO  com.autograder.cli.tasks.turnin.TurninTask - Successfully turned in project
+12-06 23:31:09 [main] INFO  com.autograder.cli.App - Command turnin exits normally
+12-06 23:31:09 [main] INFO  com.autograder.cli.App - Application exits normally
